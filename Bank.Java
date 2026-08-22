@@ -81,4 +81,14 @@ public boolean deposit(double amount) {
     public double checkBalance() {
         return openingBalance;
     }
-} 
+    
+    public boolean matchesAccountNumber(long searchAccountNumber) {
+        return this.accountNumber == searchAccountNumber;
+    }
+
+    public void displayCompleteDetails() {
+        displayBankDetails();
+        displayUserDetails();
+        displayAccountDetails();
+    }
+
